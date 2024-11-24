@@ -1,5 +1,6 @@
 <div>
-  <a routerLink="/tasks">
+<!--  new 1 and 3 --268-->
+  <a [routerLink]="['/users', user().id]" routerLinkActive="selected">
     <img [src]="imagePath()" [alt]="user().name" />
     <span> {{user().name}}</span>
   </a>
