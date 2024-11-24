@@ -1,4 +1,12 @@
-<!--<p>{{userId()}}</p>-->
+<p>
+<!--  ./ means stay on that page-->
+  <a routerLink="./"  [queryParams]="{order: 'asc'}">
+<!--    282-->
+ Sort Ascending/ Descending
+  </a>
+</p>
+
+
 <ul>
   @for (task of userTasks(); track task.id) {
     <li>
