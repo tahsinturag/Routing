@@ -1,8 +1,8 @@
 <p>
 <!--  ./ means stay on that page-->
-  <a routerLink="./"  [queryParams]="{order: 'asc'}">
-<!--    282-->
- Sort Ascending/ Descending
+  <a routerLink="./"  [queryParams]="{order: order()==='asc'? 'desc' : 'asc'}">
+<!--    282 and 283 query parameter-->
+      Sort {{ order() === 'asc' ? 'Descending' : 'Ascending' }}
   </a>
 </p>
 

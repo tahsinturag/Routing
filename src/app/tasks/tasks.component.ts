@@ -13,6 +13,8 @@ import {RouterLink} from "@angular/router";
 })
 export class TasksComponent {
   userId = input.required<string>();
+  order = input<'asc'|'desc'>();
+  // 283 automatic input binding
   private tasksService = inject(TasksService);
   // 276
   userTasks = computed(() =>
