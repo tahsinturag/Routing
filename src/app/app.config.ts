@@ -7,10 +7,9 @@ export const appConfig: ApplicationConfig =
     provideRouter(routes, withComponentInputBinding(),withRouterConfig(
       {
         paramsInheritanceStrategy: 'always',
-      //   275
+
       }
     )),
   ],
 }
-//3
-//new 4,, 270
+
