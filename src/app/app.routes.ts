@@ -10,14 +10,17 @@ export const routes: Routes = [
     path: '',
     component: NoTaskComponent,
   },
-  // {
-  //   path: 'tasks',
-  //   component: TasksComponent,
-  // },
+
   {
     path: 'users/:userId',
     component: UserTasksComponent,
     children: [
+      {
+        path: '',
+        redirectTo: 'tasks',
+        pathMatch: 'prefix',
+      },
+      // 279 ^
       {
         path: 'tasks',
         component: TasksComponent
